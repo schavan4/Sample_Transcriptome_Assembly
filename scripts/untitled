@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# runQuast.sh
+
+# following function runs quast to assess the genome assembly quality
+function Quast {
+    quast.py ../rhodo/contigs.fasta
+}
+
+Quast
