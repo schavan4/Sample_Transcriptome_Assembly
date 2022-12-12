@@ -2,8 +2,10 @@
 # runQuast.sh
 
 # following function runs quast to assess the genome assembly quality
+dirPath=$1
+
 function Quast {
-    quast.py ../rhodo/contigs.fasta
+    quast.py "${dirPath}thermo/contigs.fasta"
 }
 
 Quast

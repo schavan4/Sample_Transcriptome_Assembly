@@ -12,16 +12,18 @@ echo "Loading Anaconda env"
 module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 
+mkdir -p data/thermo/
+
 echo "Downloading reads"
-bash scripts/getNGS.sh				#Retrieves raw sequence reads
+#bash scripts/getNGS.sh data/				#Retrieves raw sequence reads
 
 echo "Trimming reads"
-bash scripts/trim.sh				#Trims reads that are innacurate (accuracy below a threshold)
+#bash scripts/trim.sh data/				#Trims reads that are innacurate (accuracy below a threshold)
 
 echo "Assembling genome"
-bash scripts/runSpades.sh			#Assembles the raw trimmed reads into a usable genome in fasta format
+#bash scripts/runSpades.sh data/			#Assembles the raw trimmed reads into a usable genome in fasta format
 
 echo "Analyzing assembly"
-bash scripts/runQuast.sh			#Assesses the quality and accuracy of our genome assembly
+bash scripts/runQuast.sh data/			#Assesses the quality and accuracy of our genome assembly
 
 echo "Done!"
