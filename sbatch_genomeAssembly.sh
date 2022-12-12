@@ -13,7 +13,7 @@ module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 
 echo "Downloading reads"
-bash getNGS.sh				#Retrieves raw sequence reads
+bash scripts/getNGS.sh				#Retrieves raw sequence reads
 
 echo "Trimming reads"
 bash scripts/trim.sh				#Trims reads that are innacurate (accuracy below a threshold)
