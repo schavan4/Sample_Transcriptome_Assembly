@@ -11,8 +11,8 @@ dirPath=$1
 
 fastqPath="${dirPath}thermo_RNAseq/"
 
-leftSuffix=".R1.fastq"
-rightSuffix=".R2.fastq"
+leftSuffix="_1.fastq"
+rightSuffix="_2.fastq"
 pairedOutPath="${dirPath}trimmed_RNAseq/paired/"
 unpairedOutPath="${dirPath}trimmed_RNAseq/unpaired/"
 
