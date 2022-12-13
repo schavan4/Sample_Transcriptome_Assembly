@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #SBATCH --partition=short		#Creates a batch with the specified partition type (short has the longest time)
 #SBATCH --job-name=assembleGenome	#Specifies the name of the batch job
 #SBATCH --time=04:00:00			#Time allocated to running the batch job
