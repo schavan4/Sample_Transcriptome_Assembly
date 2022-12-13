@@ -26,4 +26,7 @@ bash scripts/runSpades.sh data/			#Assembles the raw trimmed reads into a usable
 echo "Analyzing assembly"
 bash scripts/runQuast.sh data/			#Assesses the quality and accuracy of our genome assembly
 
+echo "Building reference from genome assembly"
+bash scripts/thermoBuild.sh data/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-thermoBuild.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-thermoBuild.err
+
 echo "Done!"
