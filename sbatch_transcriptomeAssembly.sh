@@ -21,9 +21,9 @@ bash scripts/trimAll.sh data/
 
 echo "Starting De Novo Assembly $(date)"
 echo "Assemble the De Novo Transcriptome $(date)"
-bash scripts/trinityDeNovo.sh data/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.err
+bash scripts/trinityDeNovo.sh data/ results/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.err
 
 echo "Analyze the De Novo Transcriptome $(date)"
-bash scripts/analyzeTrinityDeNovo.sh data/ 1>results/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinity_de_novo_stats.txt 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-analyzeTrinityDeNovo.err
+bash scripts/analyzeTrinityDeNovo.sh results/ 1>results/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinity_de_novo_stats.txt 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-analyzeTrinityDeNovo.err
 
 echo "De Novo Assembly complete $(date)"
