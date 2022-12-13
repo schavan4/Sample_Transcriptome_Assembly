@@ -6,4 +6,4 @@ dirPath=$1
 
 gmap_build -D dirPath \
 -d ThermusGmapDb \
-"${dirPath}thermo/GCA_001417965.1_Aiptasia_genome_1.1_genomic.fna
+"${dirPath}thermo/contigs.fasta
