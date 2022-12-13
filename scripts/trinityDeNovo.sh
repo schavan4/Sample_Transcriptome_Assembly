@@ -5,6 +5,8 @@
 dirPath=$1
 resPath=$2
 
+mkdir -p "${2}trinity_de_novo"
+
 # Get the list of left reads and store as $leftReads
 leftReads="$(ls -q ${dirPath}trimmed/paired/SRR125494*_1.fastq)"
 
