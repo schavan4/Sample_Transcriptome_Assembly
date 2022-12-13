@@ -7,12 +7,14 @@
 # this is only for Discovery - local systems will typically have a path like: /usr/local/programs/Trimmomatic-0.39-2/
 PATH_TO_TRIMMOMATIC="/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2"
 
-fastqPath="../data/rawreads/"
+dirPath=$1
+
+fastqPath="${dirPath}thermo_RNAseq/"
 
 leftSuffix=".R1.fastq"
 rightSuffix=".R2.fastq"
-pairedOutPath="../data/trimmed/paired/"
-unpairedOutPath="../data/trimmed/unpaired/"
+pairedOutPath="${dirPath}trimmed_RNAseq/paired/"
+unpairedOutPath="${dirPath}trimmed_RNAseq/unpaired/"
 
 mkdir -p $pairedOutPath
 mkdir -p $unpairedOutPath
