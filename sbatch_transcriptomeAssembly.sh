@@ -16,6 +16,9 @@ module load samtools/1.10
 echo "Downloading RNAseq reads"
 bash scripts/getRNAseq.sh data/				#Retrieves raw sequence reads
 
+echo "Trimming RNAseq reads"          #Trims RNA seq reads
+bash scripts/trimAll.sh data/	
+
 echo "Starting De Novo Assembly $(date)"
 echo "Assemble the De Novo Transcriptome $(date)"
 bash trinityDeNovo.sh data/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.err
