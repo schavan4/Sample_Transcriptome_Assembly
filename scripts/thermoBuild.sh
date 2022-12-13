@@ -4,6 +4,6 @@
 
 dirPath=$1
 
-gmap_build -D dirPath \
+gmap_build -D $dirPath \
 -d ThermusGmapDb \
 "${dirPath}thermo/contigs.fasta"
