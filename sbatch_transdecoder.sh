@@ -11,7 +11,6 @@
 #SBATCH --mail-user=chavan.soh@northeastern.edu # Update to your user name!
 
 # Usage: sbatch sbatch_transdecoder.sh
-# Assumes input data is in /home/$USER/AiptasiaRNASeq/data/ 
 
 echo "Starting our analysis $(date)" 
 echo 
