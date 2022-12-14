@@ -3,8 +3,8 @@
 #SBATCH --job-name=ips
 #SBATCH --time=04:00:00                 
 #SBATCH -N 1                            # nodes requested
-#SBATCH -n 4                            # task per node requested
-#SBATCH --mem=10Gb
+#SBATCH -n 32                            # task per node requested
+#SBATCH --mem=100Gb
 #SBATCH --exclusive
 #SBATCH --output="batch-%x-%j.output"   # where to direct standard output; will be batch-jobname-jobID.output
 #SBATCH --mail-type=ALL
