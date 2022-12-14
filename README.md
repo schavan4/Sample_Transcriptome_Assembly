@@ -4,11 +4,11 @@ RNA seq SRR: SRR12549440</br>
 
 # Final Project
 
-## Author
+### Author
 
 Sohil Chavan
 
-## Date Created
+### Date Created
 
 12/10/2022
 
