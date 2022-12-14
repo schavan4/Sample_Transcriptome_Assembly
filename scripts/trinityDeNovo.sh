@@ -30,6 +30,6 @@ rightReads="${rightReads// /,}"
 Trinity \
 --seqType fq \
 --output "${resPath}trinity_de_novo" \
---max_memory 10G --CPU 4 \
+--max_memory 100G --CPU 16 \
 --left $leftReads \
 --right $rightReads
