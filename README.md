@@ -75,16 +75,17 @@ sbatch sbatch_transcriptomeAssembly.sh
 
 ### Expected Output
 
-
+* Output transcriptome assembly located in results/trinity_de_novo
 
 ## Transcriptome Annotation
 
 ### Goal
 
-
+* The goal of this pipeline is to take in an assembled transcriptome and perform a protein structure/function analysis. The objective is to annotate the transcriptome with recognizable markers for known protein domains.
 
 ### Required Input
 
+* Required input is the result of the trinity de novo assembly in .fasta format, though the pipeline automatically copies the trinity_de_novo folder from the results to the data directory
 * To run the pipeline:
 ```
 sbatch sbatch_transdecoder.sh
