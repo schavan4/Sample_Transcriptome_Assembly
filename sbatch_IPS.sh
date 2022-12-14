@@ -45,7 +45,7 @@ echo "Running scan on $LINES_TO_PROCESS lines of $PROTEINS"
 
 if $LINES_TO_PROCESS = "all" 
 then
-  file_lines=$(wc -l data/$PROTEINS | cut -f 1 -d " ")
+  file_lines=$(wc -l < data/$PROTEINS)
 else
   file_lines=$LINES_TO_PROCESS
 fi
