@@ -8,4 +8,4 @@
 #<predictedProteins> /results/predictedProteins/Trinity.fasta.transdecoder.pep
 
 
-blastp -query $1 -db $2 -outfmt "6 qseqid sacc qlen slen length nident pident evalue stitle" -evalue 1e-10 -num_threads 4 
+blastp -query $1 -db $2 -outfmt "6 qseqid sacc qlen slen length nident pident evalue stitle" -evalue 1e-10 -num_threads 32 
