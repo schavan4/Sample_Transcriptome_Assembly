@@ -16,7 +16,7 @@ echo "Starting our analysis $(date)"
 echo 
 
 # define key constants
-INPUT_DATA_PATH=/results
+INPUT_DATA_PATH=results
 PREDICTED_PROTEIN_PATH=/predictedProteins
 PROTEINS=Trinity.fasta.transdecoder.pep
 ALL_PROTEINS=$INPUT_DATA_PATH$PREDICTED_PROTEIN_PATH/$PROTEINS
