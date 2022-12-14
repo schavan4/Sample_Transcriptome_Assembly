@@ -11,6 +11,7 @@ echo "Starting analysis"
 echo "Loading Anaconda env"
 module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
+module load gsnap/2021-12-17
 
 mkdir -p data/thermo/
 mkdir -p results/logs
