@@ -4,10 +4,6 @@ RNA seq SRR: SRR12549440
 
 # Final Project
 
-## Overview
-
-
-
 ## Author
 
 Sohil Chavan
@@ -16,21 +12,99 @@ Sohil Chavan
 
 12/10/2022
 
+## Introduction
+
+### Goal
+
+
+
+### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+### Expected Output
+
+
+
 ## Methods
 
 ### Genome Assembly
+
+
+#### Goal
+
+
+
+#### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+#### Expected Output
 
 
 
 ### Transcriptome Assembly
 
 
+#### Goal
+
+
+
+#### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+#### Expected Output
+
+
 
 ### Transcriptome Annotation
 
 
+#### Goal
+
+
+
+#### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+#### Expected Output
+
+
 
 ### Protein Function Prediction
+
+
+#### Goal
+
+
+
+#### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+#### Expected Output
 
 
 
