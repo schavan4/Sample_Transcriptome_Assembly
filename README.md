@@ -120,7 +120,7 @@ sbatch sbatch_IPS.sh
 
 ### Expected Output
 
-* 
+* The .txt files denoting domain, Gene Ontology, and pathway info should be found in the generated subdirectory the results directory
 
 # References
 
