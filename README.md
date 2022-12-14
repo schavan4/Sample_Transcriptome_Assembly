@@ -39,9 +39,9 @@ The output data will be in the created results folder in the project directory w
 ### Required Input
 
 * To run the pipeline:
-'''
+```
 sbatch sbatch_genomeAssembly.sh
-'''
+```
 
 ### Required Versions of Resources
 
