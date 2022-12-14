@@ -52,7 +52,7 @@ sbatch sbatch_genomeAssembly.sh
 ### Expected Output
 
 * Spades outputs the assembled genome to the data/thermo directory
-** The contigs.fasta is used to build the reference database which can be used for optional GSNAP alignment
+  * The contigs.fasta is used to build the reference database which can be used for optional GSNAP alignment
 * Quast outputs to its own quast_results in the project directory
 * The reference database is built in the ThermusGenomeDb folder in data/
 
