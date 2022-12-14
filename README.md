@@ -98,16 +98,17 @@ sbatch sbatch_transdecoder.sh
 
 ### Expected Output
 
-
+* The expected output should he in the results folder and should include a transdecoder.pep file
 
 ## Protein Function Prediction
 
 ### Goal
 
-
+* The goal of this pipeline is to take in a .pep file of predicted coding regions for protein domains and compare against the InterPro database to predict protein function
 
 ### Required Input
 
+* This pipeline automatically takes in the transdecoder.pep file as input from the previous pipeline
 * To run the pipeline:
 ```
 sbatch sbatch_IPS.sh
@@ -115,11 +116,11 @@ sbatch sbatch_IPS.sh
 
 ### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
-
+* InterProScan.sh is a dependency for this pipeline
 
 ### Expected Output
 
-
+* 
 
 # References
 
