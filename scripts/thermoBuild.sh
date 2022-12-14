@@ -4,6 +4,8 @@
 
 dirPath=$1
 
+mkdir -p "${dirPath}ThermusGmapDb"
+
 gmap_build -D $dirPath \
 -d ThermusGmapDb \
 "${dirPath}thermo/contigs.fasta"
