@@ -13,6 +13,7 @@ module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 
 mkdir -p data/thermo/
+mkdir -p results/logs
 
 echo "Downloading reads"
 bash scripts/getNGS.sh data/				#Retrieves raw sequence reads
