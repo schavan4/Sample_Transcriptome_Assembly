@@ -37,14 +37,8 @@ echo "Loading our BINF6308 Anaconda environment."
 module load anaconda3/2021.11
 source activate BINF-12-2021
 
-echo "Make directory for data files"
-mkdir -p data/
-
 echo "Moving predicted proteins to the working directory"
 cp $ALL_PROTEINS data/
-
-echo "Make directory for log files"
-mkdir -p results/logs/
 
 echo "Starting InterProScan pipeline $(date)"
 echo "Running scan on $LINES_TO_PROCESS lines of $PROTEINS"
