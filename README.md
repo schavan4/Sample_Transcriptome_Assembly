@@ -94,7 +94,7 @@ sbatch sbatch_transdecoder.sh
 ### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
 * Trinity release v2.13 or later (TransDecoder included with Trinity)
-* 
+* This pipeline is dependent on HMMER search/align and BLAST functionality
 
 ### Expected Output
 
