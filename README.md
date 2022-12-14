@@ -16,6 +16,25 @@ Sohil Chavan
 
 ### Goal
 
+The goal of this program is to 
+
+### Required Input
+
+
+
+### Required Versions of Resources
+
+
+
+### Expected Output
+
+
+
+## Genome Assembly
+
+
+### Goal
+
 
 
 ### Required Input
@@ -30,85 +49,64 @@ Sohil Chavan
 
 
 
-## Methods
-
-### Genome Assembly
+## Transcriptome Assembly
 
 
-#### Goal
+### Goal
 
 
 
-#### Required Input
+### Required Input
 
 
 
-#### Required Versions of Resources
+### Required Versions of Resources
 
 
 
-#### Expected Output
+### Expected Output
 
 
 
-### Transcriptome Assembly
+## Transcriptome Annotation
 
 
-#### Goal
-
-
-
-#### Required Input
+### Goal
 
 
 
-#### Required Versions of Resources
+### Required Input
 
 
 
-#### Expected Output
+### Required Versions of Resources
 
 
 
-### Transcriptome Annotation
-
-
-#### Goal
+### Expected Output
 
 
 
-#### Required Input
+## Protein Function Prediction
+
+
+### Goal
 
 
 
-#### Required Versions of Resources
+### Required Input
 
 
 
-#### Expected Output
+### Required Versions of Resources
 
 
 
-### Protein Function Prediction
-
-
-#### Goal
+### Expected Output
 
 
 
-#### Required Input
-
-
-
-#### Required Versions of Resources
-
-
-
-#### Expected Output
-
-
-
-## References
+# References
 
 [1] Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics, 30(15), 2114–2120. https://doi.org/10.1093/bioinformatics/btu170
 
@@ -126,8 +124,6 @@ Sohil Chavan
 
 [8] TransDecoder. Retrieved from https://github.com/TransDecoder/TransDecoder
 
-[9] GENE ONTOLOGY
+[9] Apweiler, R., Attwood, T. K., Bairoch, A., Bateman, A., Birney, E., Biswas, M., Bucher, P., Cerutti, L., Corpet, F., Croning, M. D. R., Durbin, R., Falquet, L., Fleischmann, W., Gouzy, J., Hermjakob, H., Hulo, N., Jonassen, I., Kahn, D., Kanapin, A., … Zdobnov, E. M. (2000). InterPro—an integrated documentation resource for protein families, domains and functional sites. Bioinformatics, 16(12), 1145–1150. https://doi.org/10.1093/bioinformatics/16.12.1145
 
-[10] Apweiler, R., Attwood, T. K., Bairoch, A., Bateman, A., Birney, E., Biswas, M., Bucher, P., Cerutti, L., Corpet, F., Croning, M. D. R., Durbin, R., Falquet, L., Fleischmann, W., Gouzy, J., Hermjakob, H., Hulo, N., Jonassen, I., Kahn, D., Kanapin, A., … Zdobnov, E. M. (2000). InterPro—an integrated documentation resource for protein families, domains and functional sites. Bioinformatics, 16(12), 1145–1150. https://doi.org/10.1093/bioinformatics/16.12.1145
-
-[11] Jones, P., Binns, D., Chang, H.-Y., Fraser, M., Li, W., McAnulla, C., McWilliam, H., Maslen, J., Mitchell, A., Nuka, G., Pesseat, S., Quinn, A. F., Sangrador-Vegas, A., Scheremetjew, M., Yong, S.-Y., Lopez, R., & Hunter, S. (2014). InterProScan 5: genome-scale protein function classification. Bioinformatics, 30(9), 1236–1240. https://doi.org/10.1093/bioinformatics/btu031
+[10] Jones, P., Binns, D., Chang, H.-Y., Fraser, M., Li, W., McAnulla, C., McWilliam, H., Maslen, J., Mitchell, A., Nuka, G., Pesseat, S., Quinn, A. F., Sangrador-Vegas, A., Scheremetjew, M., Yong, S.-Y., Lopez, R., & Hunter, S. (2014). InterProScan 5: genome-scale protein function classification. Bioinformatics, 30(9), 1236–1240. https://doi.org/10.1093/bioinformatics/btu031
