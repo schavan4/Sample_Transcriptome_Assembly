@@ -14,6 +14,8 @@ module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 module load samtools/1.10
 
+mkdir -p results/logs/
+
 echo "Downloading RNAseq reads"
 bash scripts/getRNAseq.sh data/				#Retrieves raw sequence reads
 
