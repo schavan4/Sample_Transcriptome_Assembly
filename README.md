@@ -16,41 +16,47 @@ Sohil Chavan
 
 ### Goal
 
-The goal of this program is to 
+The main objective of this project is to take in data from DNA seq and linked RNA seq runs on Thermus Thermophilus and use them to assemble a genome, assemble a transcriptome, annotate the assembled transcriptome, and predict known proteins which would likely be expressed by the transcriptome.
 
 ### Required Input
 
-
+No required input files for this project, though the sbatch*.sh pipelines have options that can be defined by the user via a script or text editor. The project directory should contain all four pipeline scripts, along with the scripts folder.
 
 ### Required Versions of Resources
 
-
+This project requires a 64 bit operating system with Python 3, Anaconda 3. Dependencies required by subscripts are located in the BINF-12-2021 directory.
 
 ### Expected Output
 
-
+The output data will be in the created results folder in the project directory with data for some pipelines being located in their own subdirectories within the results directory. The logs are contained within results/logs. Individual pipeline output logs will be stored in the project directory itself in .output format.
 
 ## Genome Assembly
 
-
 ### Goal
 
-
+*The goal of this pipeline is to take in an SRR number for a DNA seq run, download the run, trim the reads, assemble the genome from reads, check the assembly quality/accuracy, then build a reference database from the assembly.
 
 ### Required Input
 
-
+*To run the pipeline:
+'''
+sbatch sbatch_genomeAssembly.sh
+'''
 
 ### Required Versions of Resources
 
-
+*SPAdes genome assembler v3.13.1
+*QUAST v5.2.0
+*Latest version of GMAP
 
 ### Expected Output
 
-
+*Spades outputs the assembled genome to the data/thermo directory
+**The contigs.fasta is used to build the reference database which can be used for optional GSNAP alignment
+*Quast outputs to its own quast_results in the project directory
+*The reference database is built in the ThermusGenomeDb folder in data/
 
 ## Transcriptome Assembly
-
 
 ### Goal
 
@@ -70,7 +76,6 @@ The goal of this program is to
 
 ## Transcriptome Annotation
 
-
 ### Goal
 
 
@@ -88,7 +93,6 @@ The goal of this program is to
 
 
 ## Protein Function Prediction
-
 
 ### Goal
 
