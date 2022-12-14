@@ -64,7 +64,10 @@ sbatch sbatch_genomeAssembly.sh
 
 ### Required Input
 
-
+* To run the pipeline:
+```
+sbatch sbatch_transcriptomeAssembly.sh
+```
 
 ### Required Versions of Resources
 
@@ -82,7 +85,10 @@ sbatch sbatch_genomeAssembly.sh
 
 ### Required Input
 
-
+* To run the pipeline:
+```
+sbatch sbatch_transdecoder.sh
+```
 
 ### Required Versions of Resources
 
@@ -100,7 +106,10 @@ sbatch sbatch_genomeAssembly.sh
 
 ### Required Input
 
-
+* To run the pipeline:
+```
+sbatch sbatch_IPS.sh
+```
 
 ### Required Versions of Resources
 
