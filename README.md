@@ -1,6 +1,6 @@
-Organism: Thermus thermophilus
-DNA seq SRR: SRR12549453
-RNA seq SRR: SRR12549440
+Organism: Thermus thermophilus</br>
+DNA seq SRR: SRR12549453</br>
+RNA seq SRR: SRR12549440</br>
 
 # Final Project
 
