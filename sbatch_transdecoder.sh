@@ -50,7 +50,7 @@ mkdir -p data/trinity_de_novo
 
 # part of a bigger sbatch script (e.g., #sbatch lines above)
 echo "Moving de novo Trinity transcriptome data to the working directory"
-cp -r results/trinity_de_novo/* data/trinity_de_novo
+cp -r results/trinity_de_novo/* data/trinity_de_novo/
 
 echo "Starting ORF prediction pipeline $(date)"
 echo "Identify longORFs with TransDecoder.LongOrfs on $TRANSCRIPTOME $(date)"
