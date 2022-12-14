@@ -5,4 +5,4 @@
 #<dotmblout> /results/pfam.domtblout
 #<longestOrfs> /results/trinity_de_novo.transdecoder_dir/longest_orfs.pep
 
-hmmscan --cpu 4 --domtblout $1 $2 $3
+hmmscan --cpu 32 --domtblout $1 $2 $3
