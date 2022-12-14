@@ -34,27 +34,27 @@ The output data will be in the created results folder in the project directory w
 
 ### Goal
 
-*The goal of this pipeline is to take in an SRR number for a DNA seq run, download the run, trim the reads, assemble the genome from reads, check the assembly quality/accuracy, then build a reference database from the assembly.
+* The goal of this pipeline is to take in an SRR number for a DNA seq run, download the run, trim the reads, assemble the genome from reads, check the assembly quality/accuracy, then build a reference database from the assembly.
 
 ### Required Input
 
-*To run the pipeline:
+* To run the pipeline:
 '''
 sbatch sbatch_genomeAssembly.sh
 '''
 
 ### Required Versions of Resources
 
-*SPAdes genome assembler v3.13.1
-*QUAST v5.2.0
-*Latest version of GMAP
+* SPAdes genome assembler v3.13.1
+* QUAST v5.2.0
+* Latest version of GMAP
 
 ### Expected Output
 
-*Spades outputs the assembled genome to the data/thermo directory
-**The contigs.fasta is used to build the reference database which can be used for optional GSNAP alignment
-*Quast outputs to its own quast_results in the project directory
-*The reference database is built in the ThermusGenomeDb folder in data/
+* Spades outputs the assembled genome to the data/thermo directory
+** The contigs.fasta is used to build the reference database which can be used for optional GSNAP alignment
+* Quast outputs to its own quast_results in the project directory
+* The reference database is built in the ThermusGenomeDb folder in data/
 
 ## Transcriptome Assembly
 
