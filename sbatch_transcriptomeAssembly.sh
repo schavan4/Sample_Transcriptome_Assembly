@@ -4,6 +4,7 @@
 #SBATCH --time=04:00:00			#Time allocated to running the batch job
 #SBATCH -N 1				#Number of nodes
 #SBATCH -n 32				#Number of tasks per node
+#SBATCH --mem=100gb
 #SBATCH --output="batch-%x-%j.output"	#Outputs the batch results to the /home/user.name/ directory
 
 echo "Starting analysis"
