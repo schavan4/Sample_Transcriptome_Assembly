@@ -16,14 +16,14 @@ echo "Starting our analysis $(date)"
 echo 
 
 # define key constants
-TRANSCRIPTOME=/data/trinity_de_novo/Trinity.fasta
+TRANSCRIPTOME=data/trinity_de_novo/Trinity.fasta
 SWISSPROT_DB=/work/courses/BINF6308/inputFiles/blastDB/swissprot 
-TRANSDECODER_DIR=/results/trinity_de_novo.transdecoder_dir
+TRANSDECODER_DIR=results/trinity_de_novo.transdecoder_dir
 LONGEST_ORFS=$TRANSDECODER_DIR/longest_orfs.pep
-OUTFMT=/results/blastPep_args.outfmt6
-DOMTBLOUT=/results/pfam.domtblout
+OUTFMT=results/blastPep_args.outfmt6
+DOMTBLOUT=results/pfam.domtblout
 PFAMA_PATH=/work/courses/BINF6308/inputFiles/SampleDataFiles/Pfam-A.hmm
-PREDICTED_PROTEIN_PATH=/results/predictedProteins
+PREDICTED_PROTEIN_PATH=results/predictedProteins
 FINAL_PROTEINS=$PREDICTED_PROTEIN_PATH/*transdecoder.pep
 
 # record these key constants to our batch*.output file by echoing them:
