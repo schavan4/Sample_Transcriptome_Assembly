@@ -47,11 +47,11 @@ module load anaconda3/2021.11
 source activate BINF-12-2021
 
 echo "Make directory for data files"
-mkdir -p ../data/trinity_de_novo
+mkdir -p data/trinity_de_novo
 
 # part of a bigger sbatch script (e.g., #sbatch lines above)
 echo "Moving de novo Trinity transcriptome data to the working directory"
-cp -r results/trinity_de_novo ../data/trinity_de_novo
+cp -r results/trinity_de_novo data/trinity_de_novo
 
 echo "Starting ORF prediction pipeline $(date)"
 echo "Identify longORFs with TransDecoder.LongOrfs on $TRANSCRIPTOME $(date)"
@@ -75,7 +75,7 @@ bash scripts/predictProteins_args.sh $TRANSCRIPTOME $TRANSDECODER_DIR $DOMTBLOUT
   2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-predictProteins_args.err
 echo "Copy TransDecoder.Predict outputs to $PREDICTED_PROTEIN_PATH"
 mkdir -p $PREDICTED_PROTEIN_PATH
-mv *transdecoder* $PREDICTED_PROTEIN_PATH
+mv *.pep $PREDICTED_PROTEIN_PATH || echo "Could not find transdecoder.pep!"
 
 echo "Align predicted proteins to SwissProt DB $(date)"
 bash scripts/alignPredicted_args.sh $FINAL_PROTEINS $SWISSPROT_DB \
