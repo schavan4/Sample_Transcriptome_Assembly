@@ -8,4 +8,4 @@
 #<longestOrfs> /results/trinity_de_novo.transdecoder_dir/longest_orfs.pep
 
 
-blastp -query $1 -db $2 -max_target_seqs 1 -outfmt 6 -evalue 1e-10 -num_threads 4 
+blastp -query $1 -db $2 -max_target_seqs 1 -outfmt 6 -evalue 1e-10 -num_threads 32 
