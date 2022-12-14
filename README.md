@@ -43,10 +43,10 @@ The output data will be in the created results folder in the project directory w
 sbatch sbatch_genomeAssembly.sh
 ```
 
-### Required Versions of Resources
+### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
-* SPAdes genome assembler v3.13.1
-* QUAST v5.2.0
+* SPAdes genome assembler v3.15 or later
+* QUAST v.5.0.0 or later
 * Latest version of GMAP
 
 ### Expected Output
@@ -60,7 +60,7 @@ sbatch sbatch_genomeAssembly.sh
 
 ### Goal
 
-
+* The goal of this pipeline is to download SRR runs on an RNA seq experiment on Thermus Thermophilus, trim the reads, generate a de novo transcriptome assembly, then analyze the assembled results.
 
 ### Required Input
 
@@ -69,9 +69,9 @@ sbatch sbatch_genomeAssembly.sh
 sbatch sbatch_transcriptomeAssembly.sh
 ```
 
-### Required Versions of Resources
+### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
-
+* Trinity release v2.13 or later
 
 ### Expected Output
 
@@ -90,7 +90,7 @@ sbatch sbatch_transcriptomeAssembly.sh
 sbatch sbatch_transdecoder.sh
 ```
 
-### Required Versions of Resources
+### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
 
 
@@ -111,7 +111,7 @@ sbatch sbatch_transdecoder.sh
 sbatch sbatch_IPS.sh
 ```
 
-### Required Versions of Resources
+### Required Versions of Resources (Any version after 12-2021 as found in BINF6308 directory)
 
 
 
