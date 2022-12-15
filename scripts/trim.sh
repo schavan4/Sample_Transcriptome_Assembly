@@ -15,12 +15,12 @@ mkdir -p "${dirPath}trimmed/paired"
 function trim {
     trimmomatic PE \
     -threads 1 -phred33 \
-    "${dirPath}thermo/SRR12549453_1.fastq" \
-    "${dirPath}thermo/SRR12549453_2.fastq" \
-    "${dirPath}trimmed/paired/Thermo.R1.paired.fastq" \
-    "${dirPath}trimmed/unpaired/Thermo.R1.unpaired.fastq" \
-    "${dirPath}trimmed/paired/Thermo.R2.paired.fastq" \
-    "${dirPath}trimmed/unpaired/Thermo.R2.unpaired.fastq" \
+    "${dirPath}DNAseq/SRR12549453_1.fastq" \
+    "${dirPath}DNAseq/SRR12549453_2.fastq" \
+    "${dirPath}trimmed/paired/DNAseq.R1.paired.fastq" \
+    "${dirPath}trimmed/unpaired/DNAseq.R1.unpaired.fastq" \
+    "${dirPath}trimmed/paired/DNAseq.R2.paired.fastq" \
+    "${dirPath}trimmed/unpaired/DNAseq.R2.unpaired.fastq" \
     HEADCROP:0 \
     ILLUMINACLIP:$PATH_TO_TRIMMOMATIC/adapters/TruSeq3-PE.fa:2:30:10 \
     LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
