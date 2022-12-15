@@ -26,7 +26,7 @@ echo "Trimming reads"
 bash scripts/trim.sh data/	$srrNum			#Trims reads that are innacurate (accuracy below a threshold)
 
 echo "Assembling genome"
-bash scripts/runSpades.sh data/			#Assembles the raw trimmed reads into a usable genome in fasta format
+bash scripts/runSpades.sh data/	$srrNum		#Assembles the raw trimmed reads into a usable genome in fasta format
 
 echo "Analyzing assembly"
 bash scripts/runQuast.sh data/			#Assesses the quality and accuracy of our genome assembly
