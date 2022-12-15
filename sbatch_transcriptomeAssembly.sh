@@ -14,11 +14,14 @@ module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 module load samtools/1.10
 
-#User-definable options:
-srrNum=SRR125494
+#User defined options:
+#The following sets the pipeline to retrieve SRR12549440 through SRR12549452
+srrNum=SRR125494 # SRR identifier without last two digits
+srrRangeMin="40" # First file in SRR number range
+srrRangeMax="52" # Last file in SRR number range
 
 echo "Downloading RNAseq reads"
-bash scripts/getRNAseq.sh data/	$srrNum			#Retrieves raw sequence reads
+bash scripts/getRNAseq.sh data/	$srrNum	$srrRangeMin $srrRangeMax	#Retrieves raw sequence reads
 
 echo "Trimming RNAseq reads"          #Trims RNA seq reads
 bash scripts/trimAll.sh data/
