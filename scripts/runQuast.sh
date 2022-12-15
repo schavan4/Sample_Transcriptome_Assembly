@@ -5,7 +5,7 @@
 dirPath=$1
 
 function Quast {
-    quast.py "${dirPath}thermo/spades/contigs.fasta"
+    quast.py "${dirPath}DNAseq/spades/contigs.fasta"
 }
 
 Quast
