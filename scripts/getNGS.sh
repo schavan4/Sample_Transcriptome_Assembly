@@ -2,6 +2,7 @@
 # getNGS.sh
 
 dirPath=$1
+srrNum=$2
 
 # Retrieve the Rhodobacter spheroides NGS reads.
-fasterq-dump --split-3 SRR12549453 -O "${dirPath}DNAseq" -f	#Arguments specify the split mode, NGS identifier, and output directory
+fasterq-dump --split-3 $srrNum -O "${dirPath}DNAseq" -f	#Arguments specify the split mode, NGS identifier, and output directory
