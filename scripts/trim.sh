@@ -8,6 +8,7 @@
 PATH_TO_TRIMMOMATIC="/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2"
 # following function takes in the left and right reads and outputs paired and unpaired trims of the left and right reads
 dirPath=$1
+srrNum=$2
 
 mkdir -p "${dirPath}trimmed/unpaired"
 mkdir -p "${dirPath}trimmed/paired"
@@ -15,8 +16,8 @@ mkdir -p "${dirPath}trimmed/paired"
 function trim {
     trimmomatic PE \
     -threads 1 -phred33 \
-    "${dirPath}DNAseq/SRR12549453_1.fastq" \
-    "${dirPath}DNAseq/SRR12549453_2.fastq" \
+    "${dirPath}DNAseq/${srrNum}_1.fastq" \
+    "${dirPath}DNAseq/${srrNum}_2.fastq" \
     "${dirPath}trimmed/paired/DNAseq.R1.paired.fastq" \
     "${dirPath}trimmed/unpaired/DNAseq.R1.unpaired.fastq" \
     "${dirPath}trimmed/paired/DNAseq.R2.paired.fastq" \
