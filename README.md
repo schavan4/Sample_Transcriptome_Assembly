@@ -38,6 +38,7 @@ The output data will be in the created results folder in the project directory w
 
 ### Required Input
 
+* Define $ssrNum in sbatch_genomeAssembly.sh as the complete SSR identifier for the DNAseq experiment
 * To run the pipeline:
 ```
 sbatch sbatch_genomeAssembly.sh
@@ -64,6 +65,15 @@ sbatch sbatch_genomeAssembly.sh
 
 ### Required Input
 
+* Define $ssrNum in sbatch_transcriptomeAssembly.sh as the first common digits of the SSR identifiers shared by **_ALL_** RNAseq files of interest
+* Define $ssrNumMin in sbatch_transcriptomeAssembly.sh as the last unique digits of the SSR identifier of the **_FIRST_** RNAseq file
+* Define $ssrNumMax in sbatch_transcriptomeAssembly.sh as the last unique digits of the SSR identifier of the **_LAST_** RNAseq file
+* **For example, the following sets the pipeline to retrieve SRR12549440 through SRR12549452:**
+```
+srrNum=SRR125494 # SRR identifier without last two digits
+srrRangeMin="40" # First file in SRR number range
+srrRangeMax="52" # Last file in SRR number range
+```
 * To run the pipeline:
 ```
 sbatch sbatch_transcriptomeAssembly.sh
