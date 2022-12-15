@@ -14,15 +14,18 @@ module load anaconda3/2021.11		#Loads the anaconda modules for python
 source activate BINF-12-2021		#Loads the dependencies from /BINF-12-2021
 module load samtools/1.10
 
+#User-definable options:
+srrNum=SRR125494
+
 echo "Downloading RNAseq reads"
-bash scripts/getRNAseq.sh data/				#Retrieves raw sequence reads
+bash scripts/getRNAseq.sh data/	$srrNum			#Retrieves raw sequence reads
 
 echo "Trimming RNAseq reads"          #Trims RNA seq reads
-bash scripts/trimAll.sh data/	
+bash scripts/trimAll.sh data/
 
 echo "Starting De Novo Assembly $(date)"
 echo "Assemble the De Novo Transcriptome $(date)"
-bash scripts/trinityDeNovo.sh data/ results/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.err
+bash scripts/trinityDeNovo.sh data/ results/ $srrNum 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinityDeNovo.err
 
 echo "Analyze the De Novo Transcriptome $(date)"
 bash scripts/analyzeTrinityDeNovo.sh results/ 1>results/$SLURM_JOB_NAME-$SLURM_JOB_ID-trinity_de_novo_stats.txt 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-analyzeTrinityDeNovo.err
