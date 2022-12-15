@@ -5,11 +5,12 @@
 dirPath=$1
 
 mkdir -p "${dirPath}DNAseq/spades"
+srrNum=$2
 
 function Spades {
     spades.py \
-    -1 "${dirPath}trimmed/paired/DNAseq.R1.paired.fastq" \
-    -2 "${dirPath}trimmed/paired/DNAseq.R2.paired.fastq" \
+    -1 "${dirPath}trimmed/paired/${srrNum}.R1.paired.fastq" \
+    -2 "${dirPath}trimmed/paired/${srrNum}.R2.paired.fastq" \
     -o "${dirPath}DNAseq/spades"
 }
 
