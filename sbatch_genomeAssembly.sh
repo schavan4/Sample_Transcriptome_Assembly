@@ -32,6 +32,6 @@ echo "Analyzing assembly"
 bash scripts/runQuast.sh data/			#Assesses the quality and accuracy of our genome assembly
 
 echo "Building reference from genome assembly"
-bash scripts/genomeDBBuild.sh data/ 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-genomeDBBuild.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-genomeDBBuild.err
+bash scripts/genomeDBBuild.sh data/ $srrNum 1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-genomeDBBuild.log 2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-genomeDBBuild.err
 
 echo "Done!"
