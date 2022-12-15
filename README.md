@@ -68,7 +68,7 @@ sbatch sbatch_genomeAssembly.sh
 * Define $ssrNum in sbatch_transcriptomeAssembly.sh as the first common digits of the SSR identifiers shared by **_ALL_** RNAseq files of interest
 * Define $ssrNumMin in sbatch_transcriptomeAssembly.sh as the last unique digits of the SSR identifier of the **_FIRST_** RNAseq file
 * Define $ssrNumMax in sbatch_transcriptomeAssembly.sh as the last unique digits of the SSR identifier of the **_LAST_** RNAseq file
-* **For example, the following sets the pipeline to retrieve SRR12549440 through SRR12549452:**
+* **For example, the following sets the pipeline to retrieve SRR125494_40_ through SRR125494_52_:**
 ```
 srrNum=SRR125494 # SRR identifier without last two digits
 srrRangeMin="40" # First file in SRR number range
