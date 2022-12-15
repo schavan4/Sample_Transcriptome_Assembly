@@ -16,11 +16,14 @@ module load gsnap/2021-12-17
 mkdir -p data/DNAseq/
 mkdir -p results/logs
 
+#User defined options:
+srrNum=SRR12549453
+
 echo "Downloading reads"
-bash scripts/getNGS.sh data/				#Retrieves raw sequence reads
+bash scripts/getNGS.sh data/	$srrNum			#Retrieves raw sequence reads
 
 echo "Trimming reads"
-bash scripts/trim.sh data/				#Trims reads that are innacurate (accuracy below a threshold)
+bash scripts/trim.sh data/	$srrNum			#Trims reads that are innacurate (accuracy below a threshold)
 
 echo "Assembling genome"
 bash scripts/runSpades.sh data/			#Assembles the raw trimmed reads into a usable genome in fasta format
