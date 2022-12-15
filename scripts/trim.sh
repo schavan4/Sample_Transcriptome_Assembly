@@ -18,10 +18,10 @@ function trim {
     -threads 1 -phred33 \
     "${dirPath}DNAseq/${srrNum}_1.fastq" \
     "${dirPath}DNAseq/${srrNum}_2.fastq" \
-    "${dirPath}trimmed/paired/DNAseq.R1.paired.fastq" \
-    "${dirPath}trimmed/unpaired/DNAseq.R1.unpaired.fastq" \
-    "${dirPath}trimmed/paired/DNAseq.R2.paired.fastq" \
-    "${dirPath}trimmed/unpaired/DNAseq.R2.unpaired.fastq" \
+    "${dirPath}trimmed/paired/${srrNum}.R1.paired.fastq" \
+    "${dirPath}trimmed/unpaired/${srrNum}.R1.unpaired.fastq" \
+    "${dirPath}trimmed/paired/${srrNum}.R2.paired.fastq" \
+    "${dirPath}trimmed/unpaired/${srrNum}.R2.unpaired.fastq" \
     HEADCROP:0 \
     ILLUMINACLIP:$PATH_TO_TRIMMOMATIC/adapters/TruSeq3-PE.fa:2:30:10 \
     LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
