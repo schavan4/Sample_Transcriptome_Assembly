@@ -9,7 +9,7 @@ PATH_TO_TRIMMOMATIC="/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/tr
 
 dirPath=$1
 
-fastqPath="${dirPath}thermo_RNAseq/"
+fastqPath="${dirPath}RNAseq/"
 
 leftSuffix="_1.fastq"
 rightSuffix="_2.fastq"
