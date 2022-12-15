@@ -4,11 +4,12 @@
 
 dirPath=$1
 resPath=$2
+srrNum = $3
 
 mkdir -p "${resPath}trinity_de_novo"
 
 # Get the list of left reads and store as $leftReads
-leftReads="$(ls -q ${dirPath}trimmed_RNAseq/paired/SRR125494*_1.fastq)"
+leftReads="$(ls -q ${dirPath}trimmed_RNAseq/paired/${srrNum}*_1.fastq)"
 
 # Store echo of $leftReads as $leftReads to get rid of line breaks
 leftReads=$(echo $leftReads)
@@ -18,7 +19,7 @@ leftReads="${leftReads// /,}"
 #echo $leftReads
 
 # Get the list of right reads and store as $rightReads
-rightReads="$(ls -q ${dirPath}trimmed_RNAseq/paired/SRR125494*_2.fastq)"
+rightReads="$(ls -q ${dirPath}trimmed_RNAseq/paired/${srrNum}*_2.fastq)"
 
 # Store echo of $rightReads as $rightReads to get rid of line breaks
 rightReads=$(echo $rightReads)
