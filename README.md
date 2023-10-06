@@ -2,7 +2,7 @@ Organism: Thermus thermophilus</br>
 DNA seq SRR: SRR12549453</br>
 RNA seq SRR: SRR12549440 - SRR12549452</br>
 
-# Final Project
+# Sample Transcriptome Assembly Pipeline - Sohil Chavan
 
 ### Author
 
